@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Planer</title>
+</head>
+<body>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+<form>
+  <br>
+  <br>
+  <br>
+<h2>Your Homework Planner <br>
+  <br>The new and improved way to keep track of all your assignments</h2> 
+<br>
+<h4></h4> 
+<br>
+<div id = "emptyDiv"></div>
+<br>
+<br>
+<h3 >What class is this for?</h3>
+<select id = "subject" class="form-control">
+    <option value = "History">History</option>
+    <option value = "English">English</option>
+    <option value = "Math">Math</option>
+    <option value = "Science">Science</option>
+    <option value = "Spanish">Spanish</option>
+    <option value = "Elective">Elective</option>
+    <option value = "Other">Other</option>
+  </select>
+  <br>
+<br>
+<br>
+<h3>What is the name of this assignment?</h3>
+<input id = "name" class="form-control" type="text" placeholder="Enter Name Here" value = "">
+<br>
+<br>
+<br>
+<h3>Approximately how long will it take you to finish this assignment?</h3>
+<select id = "time" class="form-control">
+    <option value = "15">15 min</option>
+    <option value = "30">30 min</option>
+    <option value = "45">45 min</option>
+    <option value = "60">60 min</option>
+    <option value = "Other">Other</option>
+  </select>
+  <br>
+<br>
+<br>
+<h3>What type of assignment is this?</h3>
+<select id = "type" class="form-control">
+    <option value = "Homework">Homework</option>
+    <option value = "Studying For a Test">Studying for Test</option>
+    <option value = "Studying For a Quiz">Studying for Quiz</option>
+    <option value = "Project">Project</option>
+    <option value = "Other">Other</option>
+  </select>
+    <br>
+    <br>
+    <br>
+    <h3>How many days until this assignment is due?</h3>
+    <select id = "dueDate" class="form-control">
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+      </select>
+    <br>
+    <br>
+    <br>
+    <h3>What day is it due?</h3>
+    <select id = "dueDay" class="form-control">
+        <option value = "Monday">Monday</option>
+        <option value = "Tuesday">Tuesday</option>
+        <option value = "Wednsday">Wednsday</option>
+        <option value = "Thursday">Thursday</option>
+        <option value = "Friday">Friday</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <h3>What (numerical) day is it due?</h3>
+      <select id = "day" class="form-control">
+        <option value = "1st">1</option>
+        <option value = "2nd">2</option>
+        <option value = "3rd">3</option>
+        <option value = "4th">4</option>
+        <option value = "5th">5</option>
+        <option value = "6th">6</option>
+        <option value = "7th">7</option>
+        <option value = "8th">8</option>
+        <option value = "9th">9</option>
+        <option value = "10th">10</option>
+        <option value = "11th">11</option>
+        <option value = "12th">12</option>
+        <option value = "13th">13</option>
+        <option value = "14th">14</option>
+        <option value = "15th">15</option>
+        <option value = "16th">16</option>
+        <option value = "17th">17</option>
+        <option value = "18th">18</option>
+        <option value = "19th">19</option>
+        <option value = "20th">20</option>
+        <option value = "21st">21</option>
+        <option value = "22nd">22</option>
+        <option value = "23rd">23</option>
+        <option value = "24th">24</option>
+        <option value = "25th">25</option>
+        <option value = "26th">26</option>
+        <option value = "27th">27</option>
+        <option value = "28th">28</option>
+        <option value = "29th">29</option>
+        <option value = "30th">30</option>
+        <option value = "31rst">31</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <h3>What month is it due?</h3>
+      <select id = "month" class="form-control">
+        <option value = "January">January</option>
+        <option value = "February">February</option>
+        <option value = "March">March</option>
+        <option value = "April">April</option>
+        <option value = "May">May</option>
+        <option value = "June">June</option>
+        <option value = "July">July</option>
+        <option value = "August">August</option>
+        <option value = "September">September</option>
+        <option value = "October">October</option>
+        <option value = "November">November</option>
+        <option value = "December">December</option>
+      </select>
+  <br>
+  <br>
+  <br>
+  <button id = "submit" type="button" class="btn btn-primary" onsubmit="myScript">Add This Assignment</button>
+</form>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="index.js" ></script>
+    </body>
+</html>

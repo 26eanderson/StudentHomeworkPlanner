@@ -1,0 +1,33 @@
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, arial, sans-serif;
+    text-align: center;
+    color: white ;
+   }
+   h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, arial, sans-serif;
+    text-align: left;
+   }
+   h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, arial, sans-serif;
+    text-align: center;
+   }
+   body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, arial, sans-serif; 
+    background-color: #0C98BA;
+     color : white;
+   }
+   .form-control{
+    background: #30bfbf;
+    color: white;
+   }
+   #name{
+    background: #30bfbf;
+    color: white;
+   }
+   #submit{
+     background-color: #30bfbf;
+   }
+   .navbar navbar-expand-lg navbar-light bg-light{
+     background-color: #30bfbf;
+     color: white;
+   }
