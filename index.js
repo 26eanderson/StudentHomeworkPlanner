@@ -22,7 +22,9 @@ $("#submit").on("click",function(){
     //creatign new div
     var newDiv = document.createElement("div");
     // assighnign varibles to new div
-    newDiv.textContent =  (subject + " " + title+ ". " + type + " that will take " + time + " minutes to finish. Due "  + dueDay + "  " + month + " the " + day);
+    newDiv.textContent =  (
+      subject + " " + title+ ". " + type + " that will take " + time + " minutes to finish. Due "  + dueDay //+ "  " + month + " the " + day
+    );
     //document.getElementById("newDiv").innerHTML //= "<div>" + " "+ $("#subject").val() + " " + $("#name").val() + " " + $("#type").val() + " " + $("#time").val() + " minutes to finish. Due "  + $("#dueDay").val() + " "+ "</div>"
       //prining newDiv benith emptyDiv  
     emptyDiv.append(newDiv)
